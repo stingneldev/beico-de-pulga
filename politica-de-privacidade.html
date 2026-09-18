@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Beiço de Pulga</title>
+<meta name="description" content="Política de Privacidade da Beiço de Pulga: como coletamos, usamos e protegemos seus dados pessoais.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>
+  :root{
+    --color-black:#1A1A1A;
+    --color-cream:#F2E8CC;
+    --color-amber:#D9A441;
+    --color-amber-hover:#C1902F;
+    --color-malt-brown:#6B4226;
+    --color-border-gray:#D8D3C4;
+    --color-white:#FFFFFF;
+
+    --font-display:'Rockwell','Roboto Slab',Georgia,'Times New Roman',serif;
+    --font-body:'Segoe UI',Inter,Roboto,'Helvetica Neue',Arial,sans-serif;
+
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:24px;
+    --space-lg:48px;
+    --space-xl:clamp(48px,8vw,80px);
+
+    --radius-btn:999px;
+    --radius-card:16px;
+
+    --header-height:76px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--color-black);
+    background:var(--color-white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  ul,ol{margin:0;padding:0;}
+  h1,h2,p{margin:0;}
+
+  .container{
+    width:100%;
+    max-width:800px;
+    margin-inline:auto;
+    padding-inline:var(--space-sm);
+  }
+
+  :focus-visible{
+    outline:3px solid var(--color-amber);
+    outline-offset:2px;
+  }
+
+  .skip-link{
+    position:absolute;
+    left:var(--space-sm);
+    top:-60px;
+    background:var(--color-amber);
+    color:var(--color-black);
+    padding:var(--space-xs) var(--space-md);
+    border-radius:8px;
+    font-weight:600;
+    z-index:1000;
+    transition:top .2s ease;
+  }
+  .skip-link:focus{top:var(--space-sm);}
+
+  /* Header */
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:var(--color-black);
+    min-height:var(--header-height);
+    display:flex;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  }
+  .site-header .container{
+    max-width:1200px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:var(--space-md);
+  }
+  .brand{
+    display:inline-flex;
+    align-items:center;
+    gap:var(--space-xs);
+    font-family:var(--font-display);
+    color:var(--color-cream);
+    font-size:22px;
+    font-weight:700;
+    text-decoration:none;
+    letter-spacing:.5px;
+  }
+  .brand:hover{color:var(--color-amber);}
+  .brand__logo{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+  }
+  .back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:var(--space-xs);
+    color:var(--color-cream);
+    text-decoration:none;
+    font-weight:500;
+    font-size:15px;
+  }
+  .back-link:hover{color:var(--color-amber);}
+  .back-link svg{width:18px;height:18px;}
+
+  /* Main content */
+  main{padding-block:var(--space-xl);}
+  .page-title{
+    font-family:var(--font-display);
+    font-size:clamp(28px,5vw,40px);
+    color:var(--color-malt-brown);
+    margin-bottom:var(--space-xs);
+  }
+  .page-updated{
+    font-size:14px;
+    color:#6a6a6a;
+    margin-bottom:var(--space-lg);
+  }
+  .policy h2{
+    font-family:var(--font-display);
+    font-size:22px;
+    color:var(--color-malt-brown);
+    margin-top:var(--space-lg);
+    margin-bottom:var(--space-sm);
+  }
+  .policy p{
+    margin-bottom:var(--space-sm);
+    color:#2a2a2a;
+  }
+  .policy ul{
+    margin-bottom:var(--space-sm);
+    padding-left:var(--space-md);
+    list-style:disc;
+  }
+  .policy li{
+    margin-bottom:var(--space-xs);
+    color:#2a2a2a;
+  }
+  .policy a{
+    color:var(--color-amber-hover);
+    text-decoration:underline;
+  }
+  .policy a:hover{color:var(--color-malt-brown);}
+
+  /* Footer */
+  .site-footer{
+    background:var(--color-black);
+    color:var(--color-cream);
+    padding-block:var(--space-lg);
+  }
+  .footer-inner{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-sm);
+    align-items:center;
+    text-align:center;
+    font-size:14px;
+  }
+  .footer-inner a{
+    color:var(--color-cream);
+    text-decoration:none;
+  }
+  .footer-inner a:hover{color:var(--color-amber);}
+  .footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:var(--space-sm);
+  }
+  .footer-warning{font-weight:600;}
+  .footer-copy{color:rgba(242,232,204,0.6);}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/logo.jpg" alt="Logotipo Beiço de Pulga" width="88" height="88">
+        Beiço de Pulga
+      </a>
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Voltar ao site
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="container">
+      <h1 class="page-title">Política de Privacidade</h1>
+      <p class="page-updated">Última atualização: 18 de setembro de 2026</p>
+
+      <div class="policy">
+        <p>A Beiço de Pulga respeita a sua privacidade e está comprometida em proteger os dados pessoais de quem visita este site ou entra em contato conosco. Esta Política de Privacidade explica quais dados coletamos, para que os usamos e quais são os seus direitos, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
+
+        <h2>1. Quais dados coletamos</h2>
+        <p>Podemos coletar os seguintes dados quando você interage com nosso site:</p>
+        <ul>
+          <li>Dados de contato que você nos envia voluntariamente, como nome, e-mail e mensagem, ao usar nossos canais de contato (e-mail ou formulários).</li>
+          <li>Dados de navegação, como páginas visitadas, tempo de permanência e tipo de dispositivo, coletados de forma agregada para entender como o site é utilizado.</li>
+        </ul>
+
+        <h2>2. Como usamos os seus dados</h2>
+        <p>Utilizamos os dados coletados para:</p>
+        <ul>
+          <li>Responder às suas dúvidas, pedidos de visita à fábrica ou outras solicitações;</li>
+          <li>Melhorar a experiência de navegação e o conteúdo do site;</li>
+          <li>Cumprir obrigações legais e regulatórias aplicáveis à venda e divulgação de bebidas alcoólicas.</li>
+        </ul>
+        <p>Não vendemos, alugamos ou comercializamos os seus dados pessoais para terceiros.</p>
+
+        <h2>3. Cookies</h2>
+        <p>Este site pode utilizar cookies essenciais para o seu funcionamento básico. Você pode configurar seu navegador para bloquear cookies, mas algumas funcionalidades do site podem deixar de funcionar corretamente.</p>
+
+        <h2>4. Compartilhamento de dados</h2>
+        <p>Seus dados podem ser compartilhados apenas quando necessário para cumprir obrigação legal, ordem judicial ou com prestadores de serviço que nos auxiliam na operação do site, sempre sob obrigação de confidencialidade.</p>
+
+        <h2>5. Seus direitos como titular dos dados</h2>
+        <p>De acordo com a LGPD, você tem direito a:</p>
+        <ul>
+          <li>Confirmar a existência de tratamento dos seus dados;</li>
+          <li>Acessar, corrigir ou solicitar a exclusão dos seus dados;</li>
+          <li>Solicitar a portabilidade dos dados a outro fornecedor de serviço;</li>
+          <li>Revogar o consentimento dado anteriormente.</li>
+        </ul>
+        <p>Para exercer qualquer um desses direitos, entre em contato pelo e-mail <a href="mailto:contato@beicodepulga.com.br">contato@beicodepulga.com.br</a>.</p>
+
+        <h2>6. Consumo responsável</h2>
+        <p>Este site trata de produtos alcoólicos. Seu conteúdo é destinado exclusivamente a maiores de 18 anos. Beba com moderação.</p>
+
+        <h2>7. Alterações nesta política</h2>
+        <p>Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças em nossas práticas ou por exigência legal. Recomendamos revisitar esta página de tempos em tempos.</p>
+
+        <h2>8. Contato</h2>
+        <p>Em caso de dúvidas sobre esta Política de Privacidade, entre em contato conosco pelo e-mail <a href="mailto:contato@beicodepulga.com.br">contato@beicodepulga.com.br</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="index.html">Voltar ao site</a>
+          <a href="mailto:contato@beicodepulga.com.br">Fale Conosco</a>
+        </div>
+        <p class="footer-warning">Beba com moderação. Venda proibida para menores de 18 anos.</p>
+        <p class="footer-copy">© Beiço de Pulga. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
