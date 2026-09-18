@@ -1,0 +1,167 @@
+Design System — Landing Page Beiço de Pulga
+Base visual extraída da identidade da marca (logo e fotos de produto), pensada para usabilidade e conversão.
+Cores
+Paleta extraída da logo (fundo preto, mascote e detalhes dourados) e das fotos de produto (rótulos coloridos por estilo de cerveja).
+Paleta principal
+Cor
+Uso
+Hex
+Preto Cervejaria
+Fundo do header, footer e seções de destaque (vem do fundo da tampinha/logo)
+#1A1A1A
+Creme Beiço
+Texto sobre fundo escuro, espaços em branco alternativos
+#F2E8CC
+Âmbar Beiço
+Cor de destaque/CTA — remete à cor da cerveja no copo
+#D9A441
+Paleta secundária
+Cor
+Uso
+Hex
+Verde Lúpulo
+Detalhe do macaão do mascote; bom para ícones e acentos secundários
+#7C8B41
+Dourado Selo
+Linhas decorativas, selos e detalhes de prêmio (medalha)
+#C9A227
+Marrom Malte
+Tom de pele do mascote; útil em ilustrações e texturas de fundo
+#6B4226
+Paleta de suporte (rótulos por estilo de cerveja)
+Usar para badges de categoria, tags de produto e bordas de cards — cada cor identifica um rótulo da linha, como já ocorre nas garrafas.
+Cor
+Estilo sugerido
+Hex
+Azul Weiss
+Weiss Bier
+#3FA9DA
+Laranja Pale Ale
+Pale Ale / American Pale Ale
+#F2A93F
+Rosé Session
+Session IPA
+#D98CA0
+Verde Blond
+Blond Ale
+#6FAE45
+Vermelho IPA
+India Pale Ale
+#D9534F
+Verde-água Especial
+Edição especial / sazonal
+#2E9E86
+Observação: os tons acima foram estimados visualmente a partir das imagens enviadas. Vale confirmar os Hex exatos com o material de marca original (manual de identidade), se existir.
+Tipografia
+A logo usa uma serifada estilo "slab/vintage" (comum em rótulos de cerveja e cartazes de circo/velho oeste). Para a landing page, o ideal é usar essa referência só em destaques (headline, nome da marca) e uma sans-serif limpa no restante, para não comprometer a legibilidade.
+Fontes sugeridas (Google Fonts, gratuitas)
+Papel
+Fonte sugerida
+Por quê
+Display / headline
+Bevan ou Ultra
+Slab serif encorpada, remete ao estilo vintage da logo
+Corpo de texto / UI
+Inter, Nunito Sans ou Work Sans
+Sans-serif neutra, alta legibilidade em telas pequenas
+Hierarquia
+Nível
+Uso
+Fonte
+Tamanho (desktop)
+Peso
+H1
+Headline do hero
+Bevan / Ultra
+48–56px
+Bold
+H2
+Títulos de seção (Nossas Cervejas, Onde Encontrar)
+Bevan / Ultra
+32–36px
+Bold
+H3
+Títulos de card / subtítulo
+Inter
+20–24px
+Semibold (600)
+Corpo
+Parágrafos, descrições de produto
+Inter
+16–18px
+Regular (400)
+Legenda / rótulo
+Labels de formulário, tags, rodapé
+Inter
+13–14px
+Medium (500)
+Altura de linha: 1.4–1.5 para corpo de texto; 1.1–1.2 para headlines. Uso da fonte display: reservar para H1/H2 e para o nome da marca — usar em excesso reduz a legibilidade.
+Componentes
+Botões
+• Primário (CTA de conversão — ex: Comprar Agora): fundo Âmbar Beiço (#D9A441), texto Preto Cervejaria (#1A1A1A), peso semibold. Hover: escurecer ~10% (#C1902F).
+• Secundário: fundo transparente, borda 2px Âmbar Beiço, texto Creme Beiço sobre fundo escuro (ou Preto Cervejaria sobre fundo claro). Hover: preencher com Âmbar Beiço a 15% de opacidade.
+• Botão sobre imagem/vídeo (hero): fundo Preto Cervejaria com leve transparência (glassmorphism sutil), texto Creme Beiço.
+• Todos os botões: padding 14px 28px, altura mínima 48px (toque confortável em mobile), ícone opcional à esquerda (ex: WhatsApp no CTA de compra).
+Inputs de formulário (ex: newsletter, agendar visita)
+• Fundo branco ou Creme Beiço claro, borda 1px cinza-claro (#D8D3C4).
+• Placeholder em cinza médio, texto digitado em Preto Cervejaria.
+• Estado de foco: borda Âmbar Beiço + leve sombra externa na cor (glow sutil).
+• Altura mínima 48px, padding horizontal 16px.
+• Mensagens de erro em vermelho (#D9534F, reaproveitando a cor de suporte da IPA).
+Cards (produto / experiência / pontos de venda)
+• Estrutura: imagem no topo (proporção 4:3 ou 1:1), depois título (H3), descrição curta e botão/CTA no rodapé do card.
+• Fundo branco ou Creme Beiço muito claro, para destacar a foto do produto.
+• Borda superior de 4–6px na cor de suporte correspondente ao estilo de cerveja (ex: azul para Weiss, vermelho para IPA) — reforça a identificação visual por rótulo.
+• Hover (desktop): leve elevação (aumento de sombra) + zoom sutil de 2–3% na imagem.
+Estética
+Border-radius
+Elemento
+Raio
+Botões
+8px (ou 999px/pill para um visual mais amigável, à escolha)
+Inputs
+8px
+Cards
+16px
+Imagens em destaque (hero, banners)
+20–24px
+Badges / selos (ex: medalha ACERVA ES)
+999px (formato circular ou pílula)
+Sombras (elevação)
+Nível
+Uso
+Especificação
+Sutil
+Cards em repouso
+0px 2px 8px rgba(0,0,0,0.08)
+Média
+Cards em hover, dropdowns
+0px 6px 16px rgba(0,0,0,0.12)
+Alta
+Modais, menu mobile aberto
+0px 12px 32px rgba(0,0,0,0.18)
+Espaçamentos (grid base 8px)
+Token
+Valor
+Uso
+xs
+8px
+Espaço entre ícone e texto
+sm
+16px
+Espaço interno de inputs/botões
+md
+24px
+Espaço entre elementos dentro de um card
+lg
+48px
+Espaço entre blocos de conteúdo
+xl
+80–96px
+Respiro entre seções da landing page
+Diretrizes gerais de usabilidade e conversão
+• Header fixo (sticky) com o CTA "Comprar Agora" sempre visível.
+• Contraste mínimo AA entre texto e fundo (evitar Creme Beiço sobre Âmbar Beiço, por exemplo — contraste baixo).
+• Selo "Medalha de Prata ACERVA ES 2025" como elemento de prova social, posicionado perto do hero ou dos cards de produto, com destaque visual (fundo Dourado Selo ou borda dourada).
+• Botões de CTA sempre com contraste alto e uma única cor de destaque (Âmbar Beiço) — evitar múltiplos CTAs competindo na mesma tela.
+• Mobile-first: colunas de cards em 1 coluna no mobile, 2–3 no tablet/desktop; espaçamento vertical generoso (xl) entre seções para facilitar o scroll e a leitura.

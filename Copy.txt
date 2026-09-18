@@ -1,0 +1,77 @@
+Landing Page – Beiço de Pulga (Textos)
+17 de set. de 2026 · @Arthur
+Nota sobre esta versão
+Usei como referência de estrutura de seções o site institucional da Spaten Brasil (cervejaspaten.com.br), que segue o formato clássico de landing page de marca de cerveja: header com menu de produtos, hero de impacto, apresentação da linha de produtos, seção de experiência/estilo de vida da marca, "onde comprar" e rodapé institucional.
+O nome da marca é Beiço de Pulga. Assim que você anexar a logo do cliente, é só me avisar por aqui que eu ajusto qualquer referência visual necessária no texto. Os três rótulos de cerveja (Pilsen, IPA e Porter/Escura) seguem como exemplos de estrutura — ajuste nomes e estilos conforme o portfólio real do cliente.
+Seção 1 — Header / Menu de navegação
+Logo: Beiço de Pulga
+Itens de menu:
+• Nossas Cervejas
+• Nossa História
+• Onde Encontrar
+Botão de destaque (CTA do header): Comprar Agora
+Seção 2 — Hero (chamada principal)
+Headline: "BEIÇO DE PULGA. FEITA À MÃO, DESDE A PRIMEIRA LEVA."
+Subheadline: Cerveja artesanal genuína, produzida em pequenos lotes com ingredientes selecionados e o tempo que cada receita pede para ficar no ponto.
+Selo de prêmio (badge de credibilidade, próximo à headline ou ao CTA): 🥈 Medalha de Prata no ACERVA ES 2025
+Texto de apoio (curto, abaixo da headline): Da nossa cervejaria para o seu copo: maltes escolhidos a dedo, lúpulo fresco e um processo que respeita cada etapa da fermentação. Sem atalhos, sem pressa — só cerveja de verdade.
+CTA principal: Conheça Nossas Cervejas CTA secundário: Onde Comprar
+Seção 3 — Sobre a marca / Nossa história
+Título da seção: Nossa História
+Corpo de texto: Tudo começou em um fundo de quintal, com uma panela, muita curiosidade e a vontade de fazer uma cerveja diferente de tudo que já tínhamos provado. De hobby entre amigos, a Beiço de Pulga se tornou uma cervejaria de verdade — mas sem perder o espírito artesanal que nos trouxe até aqui.
+Hoje, cada lote sai da nossa fábrica com a mesma atenção da primeira leva: ingredientes selecionados, receitas testadas à exaustão e o compromisso de nunca abrir mão de qualidade em nome de quantidade.
+Selo/valores (bullets curtos, estilo "pilares da marca"):
+• Produção em pequenos lotes
+• Ingredientes selecionados e rastreáveis
+• Receitas próprias, sem fórmulas de prateleira
+• Compromisso com a comunidade cervejeira local
+Seção 4 — Nossas Cervejas
+Título da seção: Nossas Cervejas
+Texto de introdução: Feitas com maltes selecionados, seguindo receitas próprias desenvolvidas e ajustadas lote a lote. Uma linha com personalidade para cada momento — do brinde leve ao gole mais encorpado.
+Card 1 — Beiço de Pulga Pilsen
+Cerveja Pilsen 4,8% alc. 20 IBU Loira, leve e refrescante, com espuma cremosa e final limpo. Feita para o dia a dia, sem abrir mão do sabor de uma cerveja verdadeiramente artesanal.
+• Botão: Conheça Mais
+• Botão: Onde Comprar
+Card 2 — Beiço de Pulga IPA
+Cerveja IPA 6,2% alc. 55 IBU Amarga e aromática, com notas cítricas e florais de lúpulos selecionados. Para quem gosta de uma cerveja com personalidade e final marcante.
+• Botão: Conheça Mais
+• Botão: Onde Comprar
+Card 3 — Beiço de Pulga Porter
+Cerveja Porter 6,5% alc. 35 IBU Escura e encorpada, com notas de café e chocolate que vêm das maltas torradas. Ideal para os momentos de fechar o dia com calma.
+• Botão: Conheça Mais
+• Botão: Onde Comprar
+Seção 5 — Experiência / Estilo de vida
+Título da seção: Beiço de Pulga Experience
+Corpo de texto: Mais do que uma cerveja, uma forma de reunir gente boa. O Beiço de Pulga Experience é o nosso espaço para brindar ao ar livre, com chope tirado na hora, música ao vivo e petiscos pensados para acompanhar cada rótulo da nossa linha.
+Um ambiente pensado para durar a tarde inteira: mesas ao ar livre, sombra de árvore, boa conversa e, claro, cerveja fresca sempre à mão.
+CTA: Ver Próximas Datas
+Bloco de apoio (locais/cidades, estilo agenda):
+• São Paulo
+• Curitiba
+• Porto Alegre
+• Salvador
+Seção 6 — Onde Encontrar
+Título da seção: Onde Encontrar
+Bloco 1 — Loja Online
+Compre direto da fábrica, com entrega em todo o Brasil. Kits, growlers e edições especiais só na nossa loja. Botão: Comprar Online
+Bloco 2 — Pontos de Venda
+Encontre a Beiço de Pulga em bares, empórios e mercados parceiros perto de você. Botão: Buscar Pontos de Venda
+Bloco 3 — Visite a Fábrica
+Conheça de perto o processo de produção e prove nossos rótulos direto na fonte, em nosso brewpub. Botão: Agendar Visita
+Seção 7 — CTA final de fechamento
+Headline de fechamento (banner de faixa larga, estilo assinatura de marca): "SUA MESA PEDE BEIÇO DE PULGA."
+Texto de apoio: Do nosso lote para o seu brinde. Peça já a sua Beiço de Pulga.
+CTA: Comprar Agora
+Seção 8 — Rodapé
+Colunas de navegação:
+• Nossas Cervejas
+• Nossa História
+• Beiço de Pulga Experience
+• Onde Encontrar
+• Loja Online
+• Fale Conosco
+Contato: Beiço de Pulga Rua das Cevadas, 000 — Bairro, Cidade/UF (00) 0000-0000 contato@beicodepulga.com.br
+Redes sociais: Instagram · Facebook · YouTube
+Links legais: Aviso Legal · Política de Cookies · Política de Privacidade · Condições Gerais
+Aviso de consumo responsável: Beba com moderação. Venda proibida para menores de 18 anos.
+Slogan de assinatura (linha final do rodapé): Malte, lúpulo e tempo — muito tempo.
