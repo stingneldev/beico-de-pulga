@@ -228,18 +228,17 @@
     content:"";
     position:absolute;
     inset:0;
-    background-image:url('assets/logo.jpg');
+    background-image:url('assets/hero1.jpg');
     background-repeat:no-repeat;
-    background-position:right center;
-    background-size:contain;
-    opacity:0;
+    background-position:68% center;
+    background-size:cover;
     pointer-events:none;
   }
   .hero::after{
     content:"";
     position:absolute;
     inset:0;
-    background:linear-gradient(90deg,var(--color-hero-bg) 0%,var(--color-hero-bg) 42%,rgba(40,38,31,0.65) 62%,rgba(40,38,31,0.1) 100%);
+    background:linear-gradient(180deg,rgba(40,38,31,0.72),rgba(40,38,31,0.72));
     pointer-events:none;
   }
   .hero .container{
@@ -381,17 +380,11 @@
   }
   .cervejas-banner__visual img{
     width:auto;
-    height:110px;
+    height:140px;
     object-fit:contain;
-    filter:drop-shadow(0 18px 20px rgba(0,0,0,0.28));
     transition:transform .3s ease;
   }
-  .cervejas-banner__visual img:hover{transform:translateY(-6px) !important;}
-  .cervejas-banner__visual img:nth-child(1){transform:rotate(-6deg);}
-  .cervejas-banner__visual img:nth-child(2){height:130px;}
-  .cervejas-banner__visual img:nth-child(3){transform:rotate(6deg);}
-  .cervejas-banner__visual img:nth-child(1):hover{transform:rotate(-6deg) translateY(-6px);}
-  .cervejas-banner__visual img:nth-child(3):hover{transform:rotate(6deg) translateY(-6px);}
+  .cervejas-banner__visual img:hover{transform:translateY(-6px);}
 
   /* Cervejas cards */
   .card-grid{
@@ -603,11 +596,9 @@
 
   /* Tablet */
   @media (min-width:768px){
-    .cervejas-banner{flex-direction:row;align-items:center;padding:var(--space-xl) var(--space-lg);}
-    .cervejas-banner__text{flex:0 0 42%;}
-    .cervejas-banner__visual{flex:1;padding-block:0;gap:var(--space-md);overflow:visible;}
-    .cervejas-banner__visual img{height:260px;}
-    .cervejas-banner__visual img:nth-child(2){height:300px;}
+    .cervejas-banner{padding:var(--space-lg);}
+    .cervejas-banner__visual{gap:var(--space-md);overflow:visible;}
+    .cervejas-banner__visual img{height:240px;}
     .historia__grid{grid-template-columns:1.1fr .9fr;align-items:stretch;}
     .historia__media{aspect-ratio:auto;height:100%;}
     .card-grid{grid-template-columns:repeat(2,1fr);}
@@ -636,9 +627,18 @@
     .header-cta{display:inline-flex;}
     .nav-cta-mobile{display:none;}
     .card-grid{grid-template-columns:repeat(3,1fr);}
+    .cervejas-banner{flex-direction:row;align-items:center;}
+    .cervejas-banner__text{flex:0 0 36%;}
+    .cervejas-banner__visual{flex:1;padding-block:0;gap:var(--space-sm);}
+    .cervejas-banner__visual img{height:240px;}
     .hero h1{max-width:20ch;}
-    .hero__content{max-width:56%;}
-    .hero::before{opacity:0.9;}
+    .hero__content{max-width:50%;}
+    .hero::before{background-position:60% center;}
+    .hero::after{background:linear-gradient(90deg,rgba(40,38,31,0.88) 0%,rgba(40,38,31,0.7) 38%,rgba(40,38,31,0) 62%);}
+  }
+
+  @media (min-width:1200px){
+    .cervejas-banner__visual img{height:260px;}
   }
 </style>
 </head>
@@ -703,9 +703,10 @@
             <a class="btn btn--primary cervejas-banner__cta" href="#onde-encontrar">Onde Comprar</a>
           </div>
           <div class="cervejas-banner__visual">
-            <img src="assets/produto1.png" alt="Garrafa da Beiço de Pulga Session IPA" width="1024" height="1536" loading="lazy">
-            <img src="assets/produto2.png" alt="Garrafa da Beiço de Pulga APA Ginger Beer" width="1024" height="1536" loading="lazy">
-            <img src="assets/produto3.png" alt="Garrafa da Beiço de Pulga American Pale Ale" width="1024" height="1536" loading="lazy">
+            <img src="assets/banner1.png" alt="Garrafa da Beiço de Pulga Session IPA" width="188" height="640" loading="lazy">
+            <img src="assets/banner2.png" alt="Garrafa da Beiço de Pulga APA Ginger Beer" width="188" height="640" loading="lazy">
+            <img src="assets/banner3.png" alt="Garrafa da Beiço de Pulga American Pale Ale" width="188" height="640" loading="lazy">
+            <img src="assets/banner4.png" alt="Garrafa da Beiço de Pulga APA Coffee Beer" width="196" height="640" loading="lazy">
           </div>
         </div>
 
@@ -757,6 +758,24 @@
               <p class="beer-card__meta">Cerveja American Pale Ale · 4,8% alc. · 20 IBU</p>
               <h3 class="beer-card__title">Beiço de Pulga American Pale Ale</h3>
               <p class="beer-card__desc">Amarga na medida certa, com lúpulos que trazem aroma cítrico e um corpo leve. A base da nossa linha Pale Ale, sem os toques especiais.</p>
+              <div class="btn-row">
+                <a class="btn btn--secondary-light btn--sm" href="#historia">Conheça Mais</a>
+                <a class="btn btn--primary btn--sm" href="#onde-encontrar">Onde Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="beer-card reveal" style="--accent:var(--color-pale-orange);">
+            <div class="beer-card__media">
+              <img
+                src="assets/produto4.png"
+                alt="Garrafa da Beiço de Pulga APA Coffee Beer"
+                width="1024" height="1536" loading="lazy">
+            </div>
+            <div class="beer-card__body">
+              <p class="beer-card__meta">Cerveja APA Coffee Beer · 5,5% alc.</p>
+              <h3 class="beer-card__title">Beiço de Pulga APA Coffee Beer</h3>
+              <p class="beer-card__desc">Uma American Pale Ale com café, unindo o amargor do lúpulo ao aroma torrado do grão. Encorpada, aromática e diferente de tudo que você já provou.</p>
               <div class="btn-row">
                 <a class="btn btn--secondary-light btn--sm" href="#historia">Conheça Mais</a>
                 <a class="btn btn--primary btn--sm" href="#onde-encontrar">Onde Comprar</a>
