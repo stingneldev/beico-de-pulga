@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beiço de Pulga</title>
-<meta name="description" content="Beiço de Pulga: cerveja artesanal genuína, produzida em pequenos lotes com ingredientes selecionados. Conheça nossa linha e descubra onde encontrar.">
+<title>Session IPA | Beiço de Pulga</title>
+<meta name="description" content="Beiço de Pulga Session IPA: Leve e lupulada, com o aroma cítrico de uma IPA e um teor alcoólico mais baixo. Feita para render mais de uma rodada sem abrir mão do caráter artesanal.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <style>
   :root{
@@ -262,11 +262,10 @@
     color:var(--color-black);
     font-size:14px;
     font-weight:600;
-    padding:6px 18px 6px 10px;
+    padding:8px 18px;
     border-radius:var(--radius-badge);
     box-shadow:var(--shadow-subtle);
   }
-  .hero__badge-icon{width:28px;height:33px;flex-shrink:0;}
   .hero h1{
     font-family:var(--font-display);
     font-size:clamp(32px,7vw,56px);
@@ -305,6 +304,7 @@
   /* Historia */
   #historia{padding-block:clamp(48px,7vw,80px);}
   #historia .section__header{margin-bottom:var(--space-sm);}
+  #historia .values-list li{padding:var(--space-sm) var(--space-md);}
   .historia__grid{
     display:grid;
     gap:var(--space-lg);
@@ -321,58 +321,26 @@
   .historia__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
   .values-list{
     margin-top:var(--space-lg);
-    display:flex;
-    flex-direction:column;
+    display:grid;
+    gap:var(--space-sm);
+    grid-template-columns:1fr;
   }
   .values-list li{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     gap:var(--space-sm);
-    padding-block:var(--space-sm);
-    border-bottom:1px solid rgba(242,232,204,0.14);
+    background:rgba(242,232,204,0.06);
+    border:1px solid rgba(242,232,204,0.25);
+    border-radius:var(--radius-card);
+    padding:var(--space-sm) var(--space-md);
     font-weight:500;
   }
-  .values-list li:first-child{padding-top:0;}
-  .values-list li:last-child{border-bottom:none;}
   .values-list svg{
     flex-shrink:0;
-    width:20px;
-    height:20px;
+    width:22px;
+    height:22px;
     color:var(--color-amber);
-  }
-  .historia__grid--award{margin-top:var(--space-xl);}
-  .award{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    gap:var(--space-xs);
-    padding-left:var(--space-md);
-    border-left:3px solid var(--color-gold);
-  }
-  .award__icon{
-    width:56px;
-    height:56px;
-    margin-bottom:var(--space-xs);
-  }
-  .award__eyebrow{
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    color:var(--color-gold);
-  }
-  .award__title{
-    font-family:var(--font-display);
-    font-size:clamp(22px,3vw,28px);
-    line-height:1.2;
-    color:var(--color-cream);
-  }
-  .award__text{
-    margin-top:var(--space-xs);
-    max-width:52ch;
-    font-size:15px;
-    line-height:1.6;
-    color:rgba(242,232,204,0.78);
+    margin-top:2px;
   }
 
   /* Cervejas banner (destaque estilo showcase) */
@@ -447,19 +415,11 @@
     justify-content:center;
     overflow:hidden;
   }
-  .beer-card__media a{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    height:100%;
-  }
   .beer-card__media img{
     width:78%;
     height:88%;
     object-fit:contain;
     transition:transform .3s ease;
-    cursor:pointer;
   }
   .beer-card:hover .beer-card__media img{transform:scale(1.04);}
   .beer-card__body{
@@ -550,7 +510,6 @@
     background:var(--color-black);
     color:var(--color-cream);
     padding-block:var(--space-xl) var(--space-lg);
-    border-top:1px solid rgba(242,232,204,0.15);
   }
   .footer-grid{
     display:grid;
@@ -640,10 +599,11 @@
     .cervejas-banner{padding:var(--space-lg);}
     .cervejas-banner__visual{gap:var(--space-md);overflow:visible;}
     .cervejas-banner__visual img{height:240px;}
-    .historia__grid{grid-template-columns:1.1fr .9fr;align-items:center;}
-    .historia__grid--award{grid-template-columns:.9fr 1.1fr;}
+    .historia__grid{grid-template-columns:1.1fr .9fr;align-items:stretch;}
+    .historia__media{aspect-ratio:auto;height:100%;}
     .card-grid{grid-template-columns:repeat(2,1fr);}
     .info-grid{grid-template-columns:repeat(2,1fr);}
+    .values-list{grid-template-columns:repeat(2,1fr);}
     .footer-grid{grid-template-columns:1.3fr repeat(3,1fr);}
     .cta-final p{white-space:nowrap;}
   }
@@ -666,7 +626,7 @@
     .main-nav__links a{padding:0;}
     .header-cta{display:inline-flex;}
     .nav-cta-mobile{display:none;}
-    .card-grid{grid-template-columns:repeat(4,1fr);}
+    .card-grid{grid-template-columns:repeat(3,1fr);}
     .cervejas-banner{flex-direction:row;align-items:center;}
     .cervejas-banner__text{flex:0 0 36%;}
     .cervejas-banner__visual{flex:1;padding-block:0;gap:var(--space-sm);}
@@ -680,6 +640,168 @@
   @media (min-width:1200px){
     .cervejas-banner__visual img{height:260px;}
   }
+
+  /* Página de produto */
+  :root{--color-gold-dark:#8A6A1E;}
+  .product-main{background:var(--color-cream);}
+  .breadcrumb{
+    padding-block:var(--space-md) 0;
+    font-size:14px;
+    color:#5a5240;
+  }
+  .breadcrumb ol{display:flex;flex-wrap:wrap;gap:var(--space-xs);margin:0;padding:0;list-style:none;}
+  .breadcrumb li + li::before{content:"/";margin-right:var(--space-xs);color:#8c8266;}
+  .breadcrumb a{color:inherit;text-decoration:none;}
+  .breadcrumb a:hover{color:var(--color-malt-brown);text-decoration:underline;}
+  .product{
+    display:grid;
+    gap:var(--space-lg);
+    grid-template-columns:1fr;
+    padding-block:var(--space-lg) var(--space-xl);
+  }
+  .product__media{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    background:radial-gradient(ellipse at 50% 55%,rgba(255,255,255,0.75),rgba(255,255,255,0) 70%);
+    border-radius:var(--radius-media);
+    padding:var(--space-md);
+    min-height:360px;
+  }
+  .product__media img{
+    width:auto;
+    max-width:100%;
+    height:min(560px,70vw);
+    object-fit:contain;
+    transition:transform .4s ease;
+  }
+  .product__media:hover img{transform:scale(1.08);}
+  .product__media img.is-placeholder{height:min(420px,60vw);}
+  .product__title{
+    font-family:var(--font-display);
+    font-size:clamp(28px,5vw,44px);
+    line-height:1.1;
+    color:var(--color-malt-brown);
+    text-transform:uppercase;
+  }
+  .product__subtitle{
+    font-family:var(--font-display);
+    font-size:clamp(20px,3vw,28px);
+    color:var(--color-gold-dark);
+    text-transform:uppercase;
+    margin-top:var(--space-xs);
+  }
+  .product__tagline{
+    margin-top:var(--space-md);
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:.02em;
+    text-transform:uppercase;
+  }
+  .product__label{
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.02em;
+  }
+  .product__label strong{color:var(--color-malt-brown);}
+  .chips{display:flex;flex-wrap:wrap;gap:var(--space-xs);margin-top:var(--space-xs);}
+  .chip{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+    padding:8px 20px;
+    border-radius:8px;
+    border:1px solid var(--color-black);
+    font-weight:700;
+    font-size:14px;
+    text-transform:uppercase;
+  }
+  .chip--active{background:var(--color-black);color:var(--color-cream);}
+  .chip--soft{border-color:rgba(26,26,26,0.25);background:rgba(255,255,255,0.55);font-weight:600;text-transform:none;}
+  .product__block{margin-top:var(--space-lg);}
+  .stats{
+    display:grid;
+    gap:var(--space-lg) var(--space-md);
+    grid-template-columns:1fr;
+    margin-top:var(--space-lg);
+  }
+  .stat__value{
+    margin-top:var(--space-sm);
+    font-family:var(--font-display);
+    font-size:32px;
+    color:var(--color-malt-brown);
+    line-height:1;
+  }
+  .scale{
+    display:flex;
+    align-items:center;
+    gap:var(--space-xs);
+    margin-top:var(--space-sm);
+    color:var(--accent-dark,var(--color-malt-brown));
+  }
+  .scale__item{display:inline-flex;opacity:.45;}
+  .scale__item.is-on{opacity:1;}
+  .scale svg{width:30px;height:30px;}
+  .product__cta{margin-top:var(--space-lg);}
+  .product__details{
+    background:var(--color-white);
+    padding-block:var(--space-xl);
+  }
+  .details-grid{display:grid;gap:var(--space-lg);grid-template-columns:1fr;}
+  .details-grid h2,.related h2{
+    font-family:var(--font-display);
+    font-size:clamp(24px,4vw,32px);
+    color:var(--color-malt-brown);
+    margin-bottom:var(--space-sm);
+  }
+  .details-grid p + p{margin-top:var(--space-sm);}
+  .pairing{display:grid;gap:var(--space-xs);}
+  .pairing li{
+    display:flex;
+    gap:var(--space-sm);
+    align-items:flex-start;
+    padding:var(--space-sm) var(--space-md);
+    border:1px solid var(--color-border-gray);
+    border-radius:var(--radius-card);
+    font-weight:500;
+  }
+  .pairing svg{flex-shrink:0;width:22px;height:22px;margin-top:2px;color:var(--color-amber-hover);}
+  .related{background:var(--color-cream);padding-block:var(--space-xl);}
+  .related__grid{
+    display:grid;
+    gap:var(--space-md);
+    grid-template-columns:repeat(2,1fr);
+    margin-top:var(--space-md);
+  }
+  .related-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:var(--space-sm);
+    padding:var(--space-md) var(--space-sm);
+    background:var(--color-white);
+    border:1px solid var(--color-border-gray);
+    border-top:5px solid var(--accent,var(--color-amber));
+    border-radius:var(--radius-card);
+    text-decoration:none;
+    transition:box-shadow .25s ease,transform .25s ease;
+  }
+  .related-card:hover{box-shadow:var(--shadow-medium);transform:translateY(-2px);}
+  .related-card img{height:150px;width:auto;object-fit:contain;}
+  .related-card span{font-weight:600;font-size:15px;}
+  @media (min-width:768px){
+    .stats{grid-template-columns:1fr 1fr;}
+    .related__grid{grid-template-columns:repeat(3,1fr);}
+    .details-grid{grid-template-columns:1.2fr 1fr;}
+  }
+  @media (min-width:1024px){
+    .product{grid-template-columns:1fr 1.15fr;align-items:start;gap:var(--space-xl);}
+    .related__grid{grid-template-columns:repeat(6,1fr);}
+    .related-card img{height:170px;}
+  }
 </style>
 </head>
 <body>
@@ -687,7 +809,7 @@
 
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="#topo">
+      <a class="brand" href="index.html">
         <img class="brand__logo" src="assets/logo.jpg" alt="Logotipo Beiço de Pulga: mascote segurando um copo de cerveja, em formato de tampinha" width="88" height="88">
         Beiço de Pulga
       </a>
@@ -699,9 +821,9 @@
 
       <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
         <ul class="main-nav__links">
-          <li><a href="#cervejas">Nossas Cervejas</a></li>
-          <li><a href="#historia">Nossa História</a></li>
-          <li><a href="#onde-encontrar">Onde Encontrar</a></li>
+          <li><a href="index.html#cervejas">Nossas Cervejas</a></li>
+          <li><a href="index.html#historia">Nossa História</a></li>
+          <li><a href="index.html#onde-encontrar">Onde Encontrar</a></li>
         </ul>
         <a class="btn btn--primary btn--sm nav-cta-mobile" href="https://api.whatsapp.com/send/?phone=5527999807210&text=Ol%C3%A1%21%20Gostaria%20de%20comprar%20cervejas%20Bei%C3%A7o%20de%20Pulga." target="_blank" rel="noopener noreferrer">Comprar Agora</a>
       </nav>
@@ -710,243 +832,90 @@
     </div>
   </header>
 
-  <main id="conteudo-principal">
+  <main id="conteudo-principal" class="product-main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Você está em">
+        <ol>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#cervejas">Nossas Cervejas</a></li>
+          <li aria-current="page">Session IPA</li>
+        </ol>
+      </nav>
 
-    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <section class="product" style="--accent:var(--color-ipa-red);" aria-labelledby="produto-titulo">
+        <div class="product__media">
+          <img src="assets/produto1.webp" alt="Garrafa da Beiço de Pulga Session IPA" width="700" height="1050">
+        </div>
+
+        <div class="product__info">
+          <h1 class="product__title" id="produto-titulo">Beiço de Pulga Session IPA</h1>
+          <p class="product__subtitle">Session IPA 600ML</p>
+          <p class="product__tagline">Leve, lupulada e fácil de beber</p>
+
+          <div class="product__block">
+            <p class="product__label">Disponível em:</p>
+            <div class="chips"><span class="chip chip--active">600ML</span></div>
+          </div>
+
+          <div class="stats">
+            <div>
+              <p class="product__label">Amargor (IBU) <strong>40</strong></p>
+              <div class="scale" role="img" aria-label="Amargor 40 IBU, nível 4 de 6"><span class="scale__item is-on"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c3.2 2.2 5.8 5.2 5.8 9 0 4.2-2.6 8.4-5.8 10-3.2-1.600-5.8-5.800-5.800-10 0-3.800 2.600-6.800 5.800-9z"/><path d="M12 6v14M8.500 9.500c1.500 1 5.500 1 7 0M8 14c1.800 1.200 6.200 1.200 8 0" fill="none"/></svg></span><span class="scale__item is-on"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c3.2 2.2 5.8 5.2 5.8 9 0 4.2-2.6 8.4-5.8 10-3.2-1.600-5.8-5.800-5.800-10 0-3.800 2.600-6.800 5.800-9z"/><path d="M12 6v14M8.500 9.500c1.500 1 5.500 1 7 0M8 14c1.800 1.200 6.200 1.200 8 0" fill="none"/></svg></span><span class="scale__item is-on"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c3.2 2.2 5.8 5.2 5.8 9 0 4.2-2.6 8.4-5.8 10-3.2-1.600-5.8-5.800-5.800-10 0-3.800 2.600-6.800 5.800-9z"/><path d="M12 6v14M8.500 9.500c1.500 1 5.500 1 7 0M8 14c1.800 1.200 6.200 1.200 8 0" fill="none"/></svg></span><span class="scale__item is-on"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c3.2 2.2 5.8 5.2 5.8 9 0 4.2-2.6 8.4-5.8 10-3.2-1.600-5.8-5.800-5.800-10 0-3.800 2.600-6.800 5.800-9z"/><path d="M12 6v14M8.500 9.500c1.500 1 5.500 1 7 0M8 14c1.800 1.200 6.200 1.200 8 0" fill="none"/></svg></span><span class="scale__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c3.2 2.2 5.8 5.2 5.8 9 0 4.2-2.6 8.4-5.8 10-3.2-1.600-5.8-5.800-5.800-10 0-3.800 2.600-6.800 5.800-9z"/><path d="M12 6v14M8.500 9.500c1.500 1 5.500 1 7 0M8 14c1.800 1.200 6.200 1.200 8 0" fill="none"/></svg></span><span class="scale__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c3.2 2.2 5.8 5.2 5.8 9 0 4.2-2.6 8.4-5.8 10-3.2-1.600-5.8-5.800-5.800-10 0-3.800 2.600-6.800 5.800-9z"/><path d="M12 6v14M8.500 9.500c1.500 1 5.500 1 7 0M8 14c1.800 1.200 6.200 1.200 8 0" fill="none"/></svg></span></div>
+            </div>
+            <div>
+              <p class="product__label">Corpo: <strong>(2)</strong></p>
+              <div class="scale" role="img" aria-label="Corpo nível 2 de 5"><span class="scale__item is-on"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.500 21.500 8.200 9.500h7.600l1.700 12z"/><circle cx="12" cy="5.800" r="2.300" fill="none"/></svg></span><span class="scale__item is-on"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.500 21.500 8.200 9.500h7.600l1.700 12z"/><circle cx="12" cy="5.800" r="2.300" fill="none"/></svg></span><span class="scale__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.500 21.500 8.200 9.500h7.600l1.700 12z"/><circle cx="12" cy="5.800" r="2.300" fill="none"/></svg></span><span class="scale__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.500 21.500 8.200 9.500h7.600l1.700 12z"/><circle cx="12" cy="5.800" r="2.300" fill="none"/></svg></span><span class="scale__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.500 21.500 8.200 9.500h7.600l1.700 12z"/><circle cx="12" cy="5.800" r="2.300" fill="none"/></svg></span></div>
+            </div>
+            <div>
+              <p class="product__label">Teor alcoólico</p>
+              <p class="stat__value">4,5%</p>
+            </div>
+            <div>
+              <p class="product__label">Temperatura ideal</p>
+              <p class="stat__value">4-7 °C</p>
+            </div>
+          </div>
+
+          <p class="product__label product__block">Estilo: <strong>Session IPA</strong></p>
+
+          <div class="btn-row product__cta">
+            <a class="btn btn--primary" href="https://api.whatsapp.com/send/?phone=5527999807210&text=Ol%C3%A1%21%20Gostaria%20de%20comprar%20a%20Bei%C3%A7o%20de%20Pulga%20Session%20IPA." target="_blank" rel="noopener noreferrer">Comprar</a>
+            <a class="btn btn--secondary-light" href="index.html#cervejas">Voltar às cervejas</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="product__details" aria-labelledby="sobre-titulo">
       <div class="container">
-        <div class="hero__content">
-          <span class="hero__badge">
-            <svg class="hero__badge-icon" viewBox="0 0 48 56" aria-hidden="true">
-              <path d="M16 24 8 50l10-5 5 8" fill="#6B4226"/>
-              <path d="M32 24l8 26-10-5-5 8" fill="#6B4226"/>
-              <circle cx="24" cy="22" r="16" fill="#1A1A1A" stroke="#C1902F" stroke-width="2"/>
-              <path d="M24 14l2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="#C9A227"/>
-            </svg>
-            Medalha de Prata no ACERVA ES 2025
-          </span>
-
-          <h1 id="hero-title">BEIÇO DE PULGA. FEITA À MÃO, DESDE A PRIMEIRA LEVA.</h1>
-
-          <p class="hero__sub">Cerveja artesanal genuína, produzida em pequenos lotes com ingredientes selecionados e o tempo que cada receita pede para ficar no ponto.</p>
-
-          <p class="hero__support">Da nossa cervejaria para o seu copo: maltes escolhidos a dedo, lúpulo fresco e um processo que respeita cada etapa da fermentação. Sem atalhos, sem pressa, só cerveja de verdade.</p>
-
-          <div class="btn-row">
-            <a class="btn btn--primary" href="#cervejas">Conheça Nossas Cervejas</a>
-            <a class="btn btn--secondary-dark" href="#onde-encontrar">Onde Comprar</a>
+        <div class="details-grid">
+          <div>
+            <h2 id="sobre-titulo">Sobre esta cerveja</h2>
+            <p>Leve e lupulada, com o aroma cítrico de uma IPA e um teor alcoólico mais baixo. Feita para render mais de uma rodada sem abrir mão do caráter artesanal.</p><p>Pensada para quem gosta do perfil aromático das IPAs, mas quer uma cerveja mais leve para acompanhar a conversa, o churrasco de domingo ou a tarde inteira.</p>
+            <h2 style="margin-top:var(--space-lg);">Notas de sabor</h2>
+            <ul class="chips"><li class="chip chip--soft">Cítrica</li><li class="chip chip--soft">Floral</li><li class="chip chip--soft">Seca</li><li class="chip chip--soft">Refrescante</li></ul>
+          </div>
+          <div>
+            <h2>Harmonização</h2>
+            <ul class="pairing"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Frango grelhado</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Tacos e comida mexicana</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Saladas com frutas cítricas</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Queijos frescos</span></li></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--light" id="cervejas" aria-labelledby="cervejas-title">
+    <section class="related" aria-labelledby="relacionadas-titulo">
       <div class="container">
-        <div class="cervejas-banner reveal">
-          <div class="cervejas-banner__text">
-            <h2 class="cervejas-banner__title" id="cervejas-title">Nossas Cervejas</h2>
-            <p class="cervejas-banner__lead"><strong>Feitas com maltes selecionados, seguindo receitas próprias desenvolvidas e ajustadas lote a lote.</strong> Uma linha com personalidade para cada momento, do brinde leve ao gole mais encorpado.</p>
-            <a class="btn btn--primary cervejas-banner__cta" href="#onde-encontrar">Onde Comprar</a>
-          </div>
-          <div class="cervejas-banner__visual">
-            <img src="assets/banner1.webp" alt="Garrafa da Beiço de Pulga Session IPA" width="188" height="640" loading="lazy">
-            <img src="assets/banner2.webp" alt="Garrafa da Beiço de Pulga APA Ginger Beer" width="188" height="640" loading="lazy">
-            <img src="assets/banner3.webp" alt="Garrafa da Beiço de Pulga American Pale Ale" width="188" height="640" loading="lazy">
-            <img src="assets/banner4.webp" alt="Garrafa da Beiço de Pulga APA Coffee Beer" width="196" height="640" loading="lazy">
-          </div>
-        </div>
-
-        <div class="card-grid">
-          <article class="beer-card reveal" style="--accent:var(--color-ipa-red);">
-            <div class="beer-card__media">
-              <a href="produto-session-ipa.html">
-                <img
-                src="assets/produto1.webp"
-                alt="Garrafa da Beiço de Pulga Session IPA"
-                width="700" height="1050" loading="lazy">
-              </a>
-            </div>
-            <div class="beer-card__body">
-              <p class="beer-card__meta">Cerveja Session IPA · 4,5% alc. · 40 IBU</p>
-              <h3 class="beer-card__title">Beiço de Pulga Session IPA</h3>
-              <p class="beer-card__desc">Leve e lupulada, com o aroma cítrico de uma IPA e um teor alcoólico mais baixo. Feita para render mais de uma rodada sem abrir mão do caráter artesanal.</p>
-              <div class="btn-row">
-                <a class="btn btn--secondary-light btn--sm" href="produto-session-ipa.html">Conheça Mais</a>
-                <a class="btn btn--primary btn--sm" href="#onde-encontrar">Onde Comprar</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="beer-card reveal" style="--accent:var(--color-pale-orange);">
-            <div class="beer-card__media">
-              <a href="produto-apa-ginger-beer.html">
-                <img
-                src="assets/produto2.webp"
-                alt="Garrafa da Beiço de Pulga APA Ginger Beer"
-                width="700" height="1050" loading="lazy">
-              </a>
-            </div>
-            <div class="beer-card__body">
-              <p class="beer-card__meta">Cerveja APA Ginger Beer · 4,8% alc. · 20 IBU</p>
-              <h3 class="beer-card__title">Beiço de Pulga APA Ginger Beer</h3>
-              <p class="beer-card__desc">Uma American Pale Ale com toque de gengibre, equilibrando o amargor do lúpulo com um frescor picante que surpreende a cada gole.</p>
-              <div class="btn-row">
-                <a class="btn btn--secondary-light btn--sm" href="produto-apa-ginger-beer.html">Conheça Mais</a>
-                <a class="btn btn--primary btn--sm" href="#onde-encontrar">Onde Comprar</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="beer-card reveal" style="--accent:var(--color-pale-orange);">
-            <div class="beer-card__media">
-              <a href="produto-american-pale-ale.html">
-                <img
-                src="assets/produto3.webp"
-                alt="Garrafa da Beiço de Pulga American Pale Ale"
-                width="700" height="1050" loading="lazy">
-              </a>
-            </div>
-            <div class="beer-card__body">
-              <p class="beer-card__meta">Cerveja American Pale Ale · 4,8% alc. · 20 IBU</p>
-              <h3 class="beer-card__title">Beiço de Pulga American Pale Ale</h3>
-              <p class="beer-card__desc">Amarga na medida certa, com lúpulos que trazem aroma cítrico e um corpo leve. A base da nossa linha Pale Ale, sem os toques especiais.</p>
-              <div class="btn-row">
-                <a class="btn btn--secondary-light btn--sm" href="produto-american-pale-ale.html">Conheça Mais</a>
-                <a class="btn btn--primary btn--sm" href="#onde-encontrar">Onde Comprar</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="beer-card reveal" style="--accent:var(--color-pale-orange);">
-            <div class="beer-card__media">
-              <a href="produto-apa-coffee-beer.html">
-                <img
-                src="assets/produto4.webp"
-                alt="Garrafa da Beiço de Pulga APA Coffee Beer"
-                width="700" height="1050" loading="lazy">
-              </a>
-            </div>
-            <div class="beer-card__body">
-              <p class="beer-card__meta">Cerveja APA Coffee Beer · 5,5% alc.</p>
-              <h3 class="beer-card__title">Beiço de Pulga APA Coffee Beer</h3>
-              <p class="beer-card__desc">Uma American Pale Ale com café, unindo o amargor do lúpulo ao aroma torrado do grão. Encorpada, aromática e diferente de tudo que você já provou.</p>
-              <div class="btn-row">
-                <a class="btn btn--secondary-light btn--sm" href="produto-apa-coffee-beer.html">Conheça Mais</a>
-                <a class="btn btn--primary btn--sm" href="#onde-encontrar">Onde Comprar</a>
-              </div>
-            </div>
-          </article>
-        </div>
+        <h2 id="relacionadas-titulo">Conheça também</h2>
+        <div class="related__grid"><a class="related-card" style="--accent:var(--color-pale-orange);" href="produto-apa-ginger-beer.html"><img src="assets/banner2.webp" alt="Garrafa da Beiço de Pulga APA Ginger Beer" loading="lazy"><span>APA Ginger Beer</span></a><a class="related-card" style="--accent:var(--color-pale-orange);" href="produto-american-pale-ale.html"><img src="assets/banner3.webp" alt="Garrafa da Beiço de Pulga American Pale Ale" loading="lazy"><span>American Pale Ale</span></a><a class="related-card" style="--accent:var(--color-pale-orange);" href="produto-apa-coffee-beer.html"><img src="assets/banner4.webp" alt="Garrafa da Beiço de Pulga APA Coffee Beer" loading="lazy"><span>APA Coffee Beer</span></a></div>
       </div>
     </section>
-
-    <section class="section section--dark" id="historia" aria-labelledby="historia-title">
-      <div class="container">
-        <div class="historia__grid">
-          <div class="reveal">
-            <div class="section__header">
-              <h2 class="section__eyebrow" id="historia-title">Nossa História</h2>
-              <div class="section__body">
-                <p>Tudo começou em um fundo de quintal, com uma panela, muita curiosidade e a vontade de fazer uma cerveja diferente de tudo que já tínhamos provado. De hobby entre amigos, a Beiço de Pulga se tornou uma cervejaria de verdade, mas sem perder o espírito artesanal que nos trouxe até aqui.</p>
-                <p>Hoje, cada lote sai da nossa fábrica com a mesma atenção da primeira leva: ingredientes selecionados, receitas testadas à exaustão e o compromisso de nunca abrir mão de qualidade em nome de quantidade.</p>
-              </div>
-            </div>
-
-            <ul class="values-list">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Produção em pequenos lotes</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Ingredientes selecionados e rastreáveis</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Receitas próprias, sem fórmulas de prateleira</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Compromisso com a comunidade cervejeira local</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="historia__media reveal">
-            <img
-              src="assets/nossahistoria.jpg"
-              alt="Cervejeiro da Beiço de Pulga tirando chope direto do tanque na fábrica"
-              width="1200" height="1800" loading="lazy">
-          </div>
-        </div>
-
-        <div class="historia__grid historia__grid--award">
-          <div class="historia__media historia__media--award reveal">
-            <img
-              src="assets/historia2.jpg"
-              alt="Garrafa da Beiço de Pulga IPA em destaque na cervejaria, cercada por lúpulo e malte"
-              width="1000" height="800" loading="lazy">
-          </div>
-
-          <div class="reveal">
-            <div class="award">
-              <svg class="award__icon" viewBox="0 0 48 56" aria-hidden="true">
-                <path d="M16 24 8 50l10-5 5 8" fill="#6B4226"/>
-                <path d="M32 24l8 26-10-5-5 8" fill="#6B4226"/>
-                <circle cx="24" cy="22" r="16" fill="#C9A227" stroke="#C1902F" stroke-width="2"/>
-                <path d="M24 14l2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="#1A1A1A"/>
-              </svg>
-              <p class="award__eyebrow">Cerveja premiada</p>
-              <p class="award__title">Medalha de Prata, ACERVA ES 2025</p>
-              <p class="award__text">Esse reconhecimento veio de um concurso promovido pela ACERVA ES, associação que reúne cervejarias artesanais de todo o Espírito Santo e avalia cada rótulo com um júri especializado. Para a Beiço de Pulga, é a confirmação de que o cuidado com cada etapa da receita, do malte à fermentação, faz diferença no copo.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--cream" id="onde-encontrar" aria-labelledby="onde-title">
-      <div class="container">
-        <div class="section__header reveal">
-          <h2 class="section__eyebrow" id="onde-title">Onde Encontrar</h2>
-        </div>
-
-        <div class="info-grid">
-          <div class="info-card reveal">
-            <div class="info-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-            <h3>Pontos de Venda</h3>
-            <p>Encontre a Beiço de Pulga em bares, empórios e mercados parceiros perto de você.</p>
-            <a class="btn btn--secondary-light btn--sm" href="#onde-encontrar">Buscar Pontos de Venda</a>
-          </div>
-
-          <div class="info-card reveal">
-            <div class="info-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <h3>Visite a Fábrica</h3>
-            <p>Conheça de perto o processo de produção e prove nossos rótulos direto na fonte, em nosso brewpub.</p>
-            <a class="btn btn--secondary-light btn--sm" href="mailto:contato@beicodepulga.com.br?subject=Agendar%20visita">Agendar Visita</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--dark cta-final" aria-labelledby="cta-final-title">
-      <div class="container reveal">
-        <h2 id="cta-final-title">SUA MESA PEDE BEIÇO DE PULGA.</h2>
-        <p>Do nosso lote para o seu brinde. Peça já a sua Beiço de Pulga.</p>
-        <a class="btn btn--primary" href="https://api.whatsapp.com/send/?phone=5527999807210&text=Ol%C3%A1%21%20Gostaria%20de%20comprar%20cervejas%20Bei%C3%A7o%20de%20Pulga." target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer" id="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="#topo">
+          <a class="brand" href="index.html">
             <img class="brand__logo" src="assets/logo.jpg" alt="Logotipo Beiço de Pulga: mascote segurando um copo de cerveja, em formato de tampinha" width="88" height="88" loading="lazy">
             Beiço de Pulga
           </a>
@@ -961,15 +930,15 @@
         <nav aria-label="Navegação do rodapé">
           <p class="footer-heading">Navegue</p>
           <ul class="footer-nav">
-            <li><a href="#cervejas">Nossas Cervejas</a></li>
-            <li><a href="#historia">Nossa História</a></li>
+            <li><a href="index.html#cervejas">Nossas Cervejas</a></li>
+            <li><a href="index.html#historia">Nossa História</a></li>
           </ul>
         </nav>
 
         <nav aria-label="Mais links do rodapé">
           <p class="footer-heading">Explore</p>
           <ul class="footer-nav">
-            <li><a href="#onde-encontrar">Onde Encontrar</a></li>
+            <li><a href="index.html#onde-encontrar">Onde Encontrar</a></li>
             <li><a href="mailto:contato@beicodepulga.com.br">Fale Conosco</a></li>
           </ul>
         </nav>
