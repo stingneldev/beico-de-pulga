@@ -318,7 +318,6 @@
   @media (max-width:767px){
     .hero__sub,.hero__support{display:none;}
     .cervejas-banner__cta{display:flex;width:fit-content;margin-inline:auto;}
-    .cervejas-banner{margin-inline:calc(-1 * var(--space-sm));border-radius:0;}
   }
   /* Section shell */
   .section{
@@ -421,6 +420,13 @@
     border-radius:var(--radius-media);
     padding:var(--space-lg) var(--space-md);
     margin-bottom:var(--space-xl);
+  }
+  @media (max-width:767px){
+    #cervejas{padding-top:0;}
+    .cervejas-banner{
+      margin-inline:calc(-1 * var(--space-sm));
+      border-radius:0;
+    }
   }
   .cervejas-banner__title{
     font-family:var(--font-display);
